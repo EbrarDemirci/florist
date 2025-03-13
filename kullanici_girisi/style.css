@@ -215,3 +215,10 @@ body {
     text-align: center; /* Metni ortalıyoruz */
     margin-bottom: 20px; /* Başlık ile içerik arasında boşluk bırakıyoruz */
 }
+
+body {
+    background-image: url('2.jpg'); /* Resmin yolunu buraya yaz */
+    background-size: cover; /* Ekrana tam oturur */
+    background-position: center; /* Ortalar */
+    background-attachment: fixed; /* Sayfa kaydırılsa bile sabit kalır */
+}
