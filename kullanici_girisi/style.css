@@ -1,164 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;1,200&display=swap');
-/*font-family: 'Nunito Sans', sans-serif;*/
-*{
-	margin: 0px;
-	padding: 0px;
-}
-.center{
-	text-align: center;
-}
-.mt-10{
-	margin-top: 10px;
-}
-.mt-20{
-	margin-top: 20px;
-}
-.container{
-	height: 100vh;
-	width: 100%;
-	float: left;
-	background: #f8c9cb;
-}
-#LoginAndRegistrationForm{
-	width: 350px;
-	background: #fff;
-	margin: 100px auto;
-	border-radius: 10px;
-	box-sizing: border-box;
-	padding: 15px;
-	transform: scale(1.2);
-	box-shadow: 0px 0px 6px 0px #cdcdcd;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
-#formTitle{
-	text-align: center;
-	padding-top: 10px;
-	font-family: 'Nunito Sans', sans-serif;
-	font-weight: bolder;
-	letter-spacing: 1px;
-	font-size: 25px;
+body {
+    line-height: 1.5;
+    background: #f8c9cb;
 }
 
-#formSwitchBtn{
-	display: flex;
-	justify-content: center;
-	padding: 20px 0px;
-}
-#formSwitchBtn button{
-	font-size: 17px;
-	letter-spacing: 1px;
-	font-family: 'Nunito Sans', sans-serif;
-	font-weight: bolder;
-	width: 160px;
-	height: 40px;
-	border: 0px;
-	cursor: pointer;
-	position: relative;
-	background: transparent;
-	border: 1px solid #747474;
-	transition: 0.4s;
-}
-#formSwitchBtn .active{
-	color: #fff;
-	background: #747474;
-}
-.input-text{
-	width: 100%;
-	height: 38px;
-	border: 0px;
-	border: 1px solid #747474;
-	box-sizing: border-box;
-	padding: 5px;
-	border-radius: 5px;
-	font-size: 17px;
-	font-family: 'Nunito Sans', sans-serif;
+/* Giriş Bölümü */
+.intro {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
 }
 
-.input-text:focus{
-	outline: none;
+/* Video Arka Plan */
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #333;
 }
 
-.forgot-pass-remember-me{
-	display: flex;
-	justify-content: center;
-	gap: 90px;
-	font-size: 14px;
+.video-container video {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
 }
 
-.forgot-pass-remember-me #ForgotPassword{
-	color: #002b27;
-	font-weight: bold;
-	transition: 0.4s;
-}
-.forgot-pass-remember-me #ForgotPassword:hover{
-	color: #008d7f;
-}
-
-.forgot-pass-remember-me input{
-	height: 12px;
-}
-.forgot-pass-remember-me label{
-	font-family: 'Nunito Sans', sans-serif;
-}
-.forgot-pass-remember-me a{
-	text-decoration: none;
-	font-family: 'Nunito Sans', sans-serif;
-	font-style: italic;
-}
-.Submit-Btn{
-	width: 100%;
-	height: 42px;
-	border: 0px;
-	border-radius: 5px;
-	cursor: pointer;
-	font-size: 17px;
-	letter-spacing: 1px;
-	font-family: 'Nunito Sans', sans-serif;
-	font-weight: bolder;
-	transition: 0.4s;
-	background-color: #747474;
-	color: #fff;
-}
-.Submit-Btn:hover{
-	background-color: #444444;
-	color: #fff;
-	
-}
-.dont-have-account,
-.already-have-account{
-	font-family: 'Nunito Sans', sans-serif;
-	letter-spacing: 0.3px;
-	font-size: 14px;
-	color: #747474;
-}
-.dont-have-account a,
-.already-have-account a{
-	font-family: 'Nunito Sans', sans-serif;
-	font-style: italic !important;
-	text-decoration: none;
-	color: #002b27;
-	font-weight: bold;
-	transition: 0.4s;
-}
-.dont-have-account a:hover,
-.already-have-account a:hover{
-	color: #008d7f;
+.video-container:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
 }
 
-#RegistrationFrom,
-#ForgotPasswordForm{
-	display: none;
+/* İçerik */
+.content {
+    z-index: 2;
+    position: relative;
 }
-.error-input{
-	border: 1px solid #ff5b5b;
+
+.read-more {
+    display: inline-block;
+    padding: 10px 30px;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: .2s all;
 }
-.error-message{
-	font-size: 11px; 
-	font-weight: bold; 
-	color: #ff5b5b;
-	text-align: left; 
-	margin: 0px; 
-	padding: 0px; 
-	margin-top: 2px; 
+
+.read-more:hover {
+    transform: scale(.9);
+}
+
+/* Giriş Formu */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#LoginAndRegistrationForm {
+    width: 350px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 0px #cdcdcd;
+    text-align: center;
+}
+
+#formSwitchBtn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#formSwitchBtn button {
+    width: 160px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #747474;
+    transition: 0.4s;
+}
+
+#formSwitchBtn .active {
+    background: #747474;
+    color: #fff;
+}
+
+.input-text {
+    width: 100%;
+    height: 38px;
+    border: 1px solid #747474;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.input-text:focus {
+    outline: none;
+}
+
+.remember-me {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.Submit-Btn {
+    width: 100%;
+    height: 42px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    background-color: #747474;
+    color: #fff;
+    transition: 0.4s;
+}
+
+.Submit-Btn:hover {
+    background-color: #444444;
+}
+
+.already-have-account {
+    font-size: 14px;
+    color: #747474;
+}
+
+.already-have-account a {
+    text-decoration: none;
+    color: #002b27;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.already-have-account a:hover {
+    color: #008d7f;
 }
