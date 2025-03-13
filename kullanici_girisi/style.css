@@ -84,7 +84,7 @@ body {
 }
 
 #LoginAndRegistrationForm {
-    width: 350px;
+    width: 450px;
     background: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border-radius: 10px;
@@ -104,19 +104,19 @@ body {
     border: none;
     cursor: pointer;
     background: transparent;
-    border: 1px solid #747474;
+    border: 1px solid #ec8792;
     transition: 0.4s;
 }
 
 #formSwitchBtn .active {
-    background: #747474;
+    background: #ec8792;
     color: #fff;
 }
 
 .input-text {
     width: 100%;
     height: 38px;
-    border: 1px solid #747474;
+    border: 1px solid #ec8792;
     padding: 5px;
     border-radius: 5px;
     font-size: 17px;
@@ -141,13 +141,13 @@ body {
     border-radius: 5px;
     cursor: pointer;
     font-size: 17px;
-    background-color: #747474;
+    background-color: #ec8792;
     color: #fff;
     transition: 0.4s;
 }
 
 .Submit-Btn:hover {
-    background-color: #444444;
+    background-color: #ec8792;
 }
 
 .already-have-account {
@@ -163,7 +163,7 @@ body {
 }
 
 .already-have-account a:hover {
-    color: #008d7f;
+    color: #61874d;
 }
 
 /* Şifremi Unuttum Bağlantısı */
@@ -175,7 +175,7 @@ body {
 }
 
 .forgot-password a:hover {
-    color: #008d7f; /* Diğer bağlantılar gibi hover rengi */
+    color: #61874d; /* Diğer bağlantılar gibi hover rengi */
     text-decoration: none; /* Altı çizili olmasın */
 }
 
@@ -188,6 +188,6 @@ body {
 }
 
 .back-to-home a:hover {
-    color: #008d7f; /* Diğer bağlantılar gibi hover rengi */
+    color: #61874d; /* Diğer bağlantılar gibi hover rengi */
     text-decoration: none; /* Altı çizili olmasın */
 }
