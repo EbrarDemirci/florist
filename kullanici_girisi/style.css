@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: Monaco, Consolas, "Courier New", monospace;
 }
 
 body {
@@ -21,6 +21,21 @@ body {
     text-align: center;
     color: #fff;
     padding: 0 20px;
+}
+
+.intro h1 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 4rem; /* Yazı boyutunu büyütür */
+    font-weight: bold; /* Yazıyı kalın yapar */
+    color: #fff; /* Yazı rengini beyaz yapar */
+    text-transform: uppercase; /* Yazıyı büyük harfe dönüştürür */
+}
+.intro h4 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 2rem; /* Yazı boyutunu büyütür */
+    font-weight: normal; /* Yazıyı normal kalınlıkta yapar */
+    color: #fff; /* Yazı rengini beyaz yapar */
+    margin-top: 10px; /* Üstten biraz boşluk bırakır */
 }
 
 /* Video Arka Plan */
