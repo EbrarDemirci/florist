@@ -165,3 +165,29 @@ body {
 .already-have-account a:hover {
     color: #008d7f;
 }
+
+/* Şifremi Unuttum Bağlantısı */
+.forgot-password a {
+    text-decoration: none;
+    color: #002b27; /* Diğer bağlantılar gibi renk */
+    font-weight: bold;
+    transition: 0.3s all;
+}
+
+.forgot-password a:hover {
+    color: #008d7f; /* Diğer bağlantılar gibi hover rengi */
+    text-decoration: none; /* Altı çizili olmasın */
+}
+
+/* Giriş Anasayfasına Geri Dön Bağlantısı */
+.back-to-home a {
+    text-decoration: none;
+    color: #002b27; /* Diğer bağlantılar gibi renk */
+    font-weight: bold;
+    transition: 0.3s all;
+}
+
+.back-to-home a:hover {
+    color: #008d7f; /* Diğer bağlantılar gibi hover rengi */
+    text-decoration: none; /* Altı çizili olmasın */
+}
