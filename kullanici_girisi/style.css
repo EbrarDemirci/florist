@@ -206,3 +206,12 @@ body {
     color: #61874d; /* Diğer bağlantılar gibi hover rengi */
     text-decoration: none; /* Altı çizili olmasın */
 }
+/* Kullanıcı Girişinin üstündeki başlık */
+#formTitle {
+    font-size: 1.5rem; /* Yazı boyutunu küçültüyoruz */
+    font-family: 'Nunito Sans', sans-serif; /* Yazı tipini ayarlıyoruz */
+    font-weight: bold; /* Yazıyı kalın yapıyoruz */
+    color: #333; /* Yazı rengini değiştiriyoruz (örneğin koyu gri) */
+    text-align: center; /* Metni ortalıyoruz */
+    margin-bottom: 20px; /* Başlık ile içerik arasında boşluk bırakıyoruz */
+}
