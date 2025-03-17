@@ -77,17 +77,24 @@ body {
 
 .read-more {
     display: inline-block;
-    padding: 10px 30px;
+    padding: 0px 10px;
     background: #fde9ff;
     color: #6141ac;
     border-radius: 5px;
     text-decoration: none;
     opacity: 0.8;
     transition: .2s all;
+
+     /* Yazı tipi ve boyutunu değiştireceğiz */
+     font-family: 'Nunito Sans', sans-serif; /* Yazı tipi değişikliği */
+     font-size: 1.3rem; /* Yazı boyutunu ayarlıyoruz */
 }
 
 .read-more:hover {
     transform: scale(.9);
+    transform: scale(.9);
+    /* Hover'da renk değişikliği isterseniz aşağıdaki gibi ekleyebilirsiniz */
+    color: #6141ac; /* Hover durumunda yazı rengini aynı tutabilirsiniz */
 }
 
 /* Giriş Formu */
