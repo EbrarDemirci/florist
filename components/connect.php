@@ -1,5 +1,5 @@
-//
-//<?php 
+
+<?php 
 
   $db_name = 'mysql:host=localhost;dbname=florist';
   $user_name = 'root';
@@ -16,4 +16,4 @@
 
 
 ?>
-//
+
